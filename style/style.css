@@ -1,5 +1,72 @@
 @charset "UTF-8";
 
+/* Baixando Fontes escolhidas do GoogleFonts COMFORTAA. OSWALD, RALEWAY */
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Oswald:wght@200;300;400;500;600;700&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Importando fonte baixada que já está na pasta */
+@font-face {
+    font-family: 'Android';
+    src: url('../fonts/idroid.otf') format('opentype');
+    font-weight: normal;
+}
+
+/*pseudo-class :root Raiz do documento, onde cria as VARIÁVEIS*/
+:root {
+    --cor0 : #c5ebd6;
+    --cor1 : #83e1ad;
+    --cor2 : #3ddc84;
+    --cor3 : #2fa866;
+    --cor4 : #1a5c37;
+    --cor5 : #063d1e; 
+
+    --font-padrao : 'Raleway', Helvetica, sans-serif;
+    --font-destaque : 'Oswald', cursive;
+    --font-android : 'Android', cursive;
+    --font-opcional : 'Comfortaa', sans-serif;
+}
+/* CONFIGURAÇÃO GLOBAL */
+* { /* retirar paddings e margins de todos os elementos do HTML */
+    margin: 0px;
+    padding: 0px;
+}
+
 body {
-    background-color: #8EFAC6;
+    background-color: var(--cor0);
+}
+
+header {
+    background-color: var(--cor4);
+    font-family: var(--font-destaque);
+}
+
+header h1 {
+    color: white;
+}
+
+header p {
+    color: white;
+}
+
+nav {
+    background-color: var(--cor5);
+}
+
+main {
+    background-color: white;
+    font-family: var(--font-padrao);
+}
+
+main h1 {
+    color: var(--cor5);
+    font-family: var(--font-android);
+}
+
+main h2 {
+    font-family: var(--font-android);
+}
+
+footer {
+    background-color: var(--cor5);
+    color: white;
+    font-family: var(--font-destaque);
 }
