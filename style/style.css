@@ -31,7 +31,10 @@
 }
 
 body {
-    background-color: var(--cor0);
+    /*shorthand background*/
+    background: var(--cor0) url('../images/wallpaper002.jpg') no-repeat fixed;
+    background-size: cover; /*doesnt working in shorthand*/
+    height: 100vh;
 }
 
 a.external::after {
@@ -164,6 +167,7 @@ main h2 {
 
 div.background-video {
     background-color: var(--cor5);
+    background-image: url('../images/pattern004.png');
     margin: 30px -20px 30px -20px;
     padding: 20px;
 }
@@ -172,7 +176,6 @@ iframe {
     display: block;
     margin: auto;
     width: 70%;
-    
 }
 
 aside {
