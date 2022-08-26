@@ -42,7 +42,6 @@ a.external::after {
 }
 
 header {
-
     min-height: 150px;
     text-align: center;
     padding-top: 40px;
@@ -51,7 +50,6 @@ header {
 
 header > h1 {
     color: white;
-
     font-family: var(--font-destaque);
     font-size: 3em;
     font-weight: normal;
