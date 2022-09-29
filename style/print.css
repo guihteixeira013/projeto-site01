@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+/* PRINT Version */
+
+* {
+    font-family: 'Courier New', Courier, monospace;
+    line-height: 1.5em;
+}
+
+a.external::after {
+    content: "";
+}
+
+iframe { display: none; }
+header, nav { display: none }
